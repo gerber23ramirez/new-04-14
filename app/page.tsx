@@ -1,3 +1,5 @@
+import Builder from "./builder";
+
 const features = [
   "Create and configure AI agents",
   "Assign goals, tools, and permissions",
@@ -23,10 +25,7 @@ export default function HomePage() {
         </ul>
       </section>
 
-      <section style={{ marginTop: 48, padding: 24, border: "1px solid #ddd", borderRadius: 12 }}>
-        <h2>Agent Builder</h2>
-        <p>The next UI layer will expose identity, instructions, goals, tools, guardrails, testing, versions, and deployment.</p>
-      </section>
+      <Builder />
     </main>
   );
 }
